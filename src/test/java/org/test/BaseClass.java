@@ -138,17 +138,17 @@ public class BaseClass {
 		driver.getWindowHandle();
 	}
 
-	private void byVisibleText(WebElement element, String value) {
+	public static void byVisibleText(WebElement element, String value) {
 		sel = new Select(element);
 		sel.selectByVisibleText(value);
 
 	}
 
-	private void byValue(WebElement element, String value) {
+	public static void byValue(WebElement element, String value) {
 		sel = new Select(element);
 		sel.selectByValue(value);
 	}
-	private void byIndex(WebElement element,int index) {
+	public static void byIndex(WebElement element,int index) {
 		sel = new Select(element);
 		sel.selectByIndex(index);
 	}
